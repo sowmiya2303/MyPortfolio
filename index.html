@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="mediaqueries.css"/>
+</head>
+<body>
+
+<nav id="desktop-nav" style="display:flex;">
+    <div class="logo w3-container w3-center w3-animate-left">SOWMIYA ESWARI</div>
+    <div>
+        <ul class="nav-links w3-container w3-center w3-animate-right" style="list-style:none;display:flex;gap:2rem;">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li> 
+            <li><a href="#skills">Skills</a></li> 
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section id="profile" style="display:flex;justify-content:center;gap:5rem;height:80vh;">
+    <div class="section__pic-container w3-container w3-center w3-animate-zoom" style="height:300px;width:300px;margin:auto 0;">
+        <img src="./assets/profile-pic.jpeg" alt="sowmi"/>
+    </div>
+    <div class="section__text" style="animation:fadeIn 2s;">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sowmiya Eswari</h1>
+        <p class="section__text__p2">Portfolio of a CS Student</p>
+        <div class="btn-container">
+            <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">View Resume</button>
+            <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+        </div>
+        <div id="socials-container">
+            <img src="./assets/linkedin.png" alt="linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/sowmiya-eswari-p-6b5a03281/'">
+            <img src="./assets/github.png" alt="github" class="icon" onclick="location.href='https://github.com/sowmiya2303'">
+        </div>
+    </div>
+</section>
+
+<section id="about" class="w3-container w3-center">
+    <p class="section__text__p1 w3-center w3-animate-top">Get To Know More</p>
+    <h2 class="title w3-animate-bottom">About Me</h2>
+    <div class="section-container" style=" display: flex;">
+        <div class="section__pic-container " style=" display: flex;margin-left: 10px;
+        ">
+            <img src="./assets/about-pic.jpeg" alt="aboutpic" class="aout-pic" style="height: 300px;
+            width: 300px; margin:auto 0;"/>
+        </div>
+        <div class="about-details-container" >
+            <div class="about-containers">
+                <div class="details-container" >
+                   <img src="./assets/education.png" alt="eduicon" style=" height: 2rem;"/>
+
+                        <p>I'm a passionate Computer Science Student with a <br>keen interest in technology and innovation. <br>I'm currently pursuing 
+                            my Bachelor's Degree in Computer Science and Engineering at Velammal College of Engineering and Technology.</p>
+                  <p>Throughout my academic journey, I've developed a solid foundation in programming languages 
+                    such as Java,C along with a knack for problem-solving and algorithm design. I thrive in challenging environments where 
+                    I can apply my analytical skills to develop innovative solutions.</p>
+                    <p>I believe in the power of collaboration and enjoy working in teams to tackle complex problems. </p>
+               
+                </div>
+                
+            </div>
+        </div>
+    </div>
+   
+</section>
+
+   <section id="skills" class="w3-container w3-center">
+    <p class="section__text__p1 w3-animate-top">Technical Expertise</p>
+    <h1 class="title w3-animate-top">Skills</h1>
+    <div class="experience-details-container" style="display: flex;
+    justify-content: center;
+    flex-direction: column;">
+        <div class="about-containers">
+            <div class="details-containers" style="padding: 1rem;
+            flex: 1;
+            background:rgb(254, 254, 255);
+            border-radius: 1rem;
+            border: rgb(3, 3, 3) 0.1rem solid;
+            border-color: rgb(0, 0, 0);
+            text-align: center;">
+                <h2 class="experience-details-container w3-animate-top">Frontend Development</h2>
+            <div class="article-container" >
+                <article>
+                    <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+                    <div><h3>HTML</h3></div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                    <div><h3>CSS</h3></div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                    <div><h3>JS</h3></div>
+                </article>
+               
+            </div>
+            </div>
+            <div class="details-containers" style="padding: 1rem;
+            flex: 1;
+            background:rgb(255, 255, 255);
+            border-radius: 1rem;
+            border: rgb(3, 3, 3) 0.1rem solid;
+            border-color: rgb(0, 0, 0);
+            text-align: center;">
+                <h2 class="experience-details-container w3-animate-top">LANGUAGES KNOWN</h2>
+            <div class="article-container" >
+                <article>
+                    <img src="./assets/checkmark.png" alt="checkmark" class="icon" />
+                    <div><h3>JAVA</h3></div>
+                </article>
+                <article>
+                    <img src="./assets/checkmark.png" alt="checkmark" class="icon"/>
+                    <div><h3>C</h3></div>
+                </article>
+            
+               
+            </div>
+            </div>
+        </div>
+    </div>
+   </section>
+   <section id="projects" class="w3-container w3-center" style="position: relative;">
+    <p class="section__text__p1 w3-animate-top">Browse My Recent</p>
+    <h1 class="title w3-animate-top">Projects</h1>
+    <div class="experience-details-container" style=" display: flex;
+    justify-content: center;
+    flex-direction: column;">
+    <div class="about-containers" style="display: flex;">
+        <div class="details-containers color-container" style="padding: 1.5rem;
+        flex: 1;
+        background: white;
+        border-radius: 2rem;
+        border: rgb(255, 252, 252) 0.1rem solid;
+        border-color: rgb(236, 236, 236);
+        text-align: center;">
+            <div class="article-container" style="display: flex;
+            text-align: initial;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 2.5rem;
+            justify-content: space-around;">
+                <img src="./assets/pharm-pic.jpg" alt="project-1" class="project-img"/>
+            </div>
+          
+            <h2 class="experience-sub-title project-title" style="color: darkolivegreen;">Project-1</h2>
+       <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sowmiya2303/Pharmacy-Management'">GitHub</button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sowmiya2303/Pharmacy-Management'">Live Demo</button>
+   
+    </div>
+        </div>
+        <div class="details-containers color-container" style="padding: 1.9rem;
+        flex: 1;
+        background: white;
+        border-radius: 2rem;
+        border: rgb(255, 252, 252) 0.1rem solid;
+        border-color: rgb(236, 236, 236);
+        text-align: center;">
+            <div class="article-container" style="display: flex;
+            text-align: initial;
+            flex-wrap: wrap;
+            flex-direction: row;
+            gap: 2.5rem;
+            justify-content: space-around;">
+                <img src="./assets/pharm-pic.jpg" alt="project-1" class="project-img"/>
+            </div>
+          
+            <h2 class="experience-sub-title project-title" style="color: darkolivegreen;">Project-1</h2>
+       <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sowmiya2303/Pharmacy-Management'">GitHub</button>
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/sowmiya2303/Pharmacy-Management'">Live Demo</button>
+   
+    </div>
+        </div>
+    </div>
+    </div>
+
+   </section>
+   
+   <section id="education"class="w3-container w3-center">
+    <p class="section__text__p1 w3-animate-top">Education</p>
+    <h2 class="title w3-animate-top">Academic Qualifications</h2>
+    <div class="section-container" style="display: flex;">
+        
+        <div class="about-details-container">
+            <div class="about-containers" style="display: flex;">
+                <div class="details-container" >
+                    <img src="./assets/education.png" alt="eduicon" style="height: 2rem;">
+                    <p style="color: crimson;">B.E Computer Science and Engineering</p>
+                    <p>Velammal College of Engineering and Technology</p>
+                    <p>Year of Completion: 2025</p>
+                </div>
+                <div class="details-container" >
+                    <img src="./assets/education.png" alt="eduicon" style="height: 2rem;">
+                    <p style="color: crimson;">HSC</p>
+                    <p>CEOA Matric.Hr.Sec.School</p>
+                    <p>Year of Completion: 2019</p>
+                </div>
+                <div class="details-container" >
+                    <img src="./assets/education.png" alt="eduicon" style="height: 2rem;">
+                    <p style="color: crimson;">SSLC</p>
+                    <p>CEOA Matric.Hr.Sec.School</p>
+                    <p>Year of Completion: 2017</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="internships"class="w3-container w3-center">
+    <p class="section__text__p1 w3-animate-top">Internships</p>
+    <h2 class="title w3-animate-top">Professional Experience</h2>
+    <div class="section-container" style="display: flex;">
+        <div class="section__pic-container" style="display: flex;margin-left: 10px;">
+            <!-- Insert an image or icon representing internships/work experience here -->
+            <img src="./assets/certificate.jpeg" alt="internship-icon" class="internship-icon" style="height: 500px;width: 400px;margin: auto 0;">
+        </div>
+        <div class="about-details-container">
+            <div class="about-containers">
+                <div class="details-container" style="width: 500px; height: 500px;">
+                    <img src="./assets/employee.png" alt="emp-icon" style="height: 2rem;">
+                    <p>Completed Internship at Reccsar Privated Limite Company</p>
+                    <p>Certification Name:<h3> MERN Stack with Cloud Computing</h3> </p>
+                    <p>Duration: 3rd July 2023 - 28th July 2023</p>
+                    <p>Description: During this internship, I had the opportunity to delve into the fundamentals of cloud computing, gaining hands-on experience with platforms such as AWS . I learned to deploy, manage, and scale cloud-based applications efficiently, gaining valuable insights into infrastructure as a service (IaaS), platform as a service (PaaS), 
+                        and software as a service (SaaS) models.Additionally, I explored the world of React.a powerful JavaScript library for building user interfaces.</p>
+                 
+            </div>
+        </div>
+    </div>
+</section>
+ <section id="certifications" class="animate__animated animate__fadeIn">
+        <p class="section__text__p1">Certifications</p>
+    <h2 class="title">Accreditation</h2>
+
+ <div class="certificate-slider">
+        <div class="certificate-slide">
+           
+            
+        </div>
+        <div class="certificate-slide">
+           
+            <img src="./assets/cybersecurity.jpeg" alt="Certificate 1" >
+            <p>Introduction to Cybersecurity</p>
+        </div>
+        <div class="certificate-slide">
+            <img src="./assets/data-analytics.jpeg" alt="Certificate 2">
+            <p>Google Data Analytics</p>
+        </div>
+        <div class="certificate-slide">
+            <img src="./assets/nptel.jpeg" alt="Certificate 3">
+            <p>NPTEL-Privacy and Security<br> in Online Social Media</p>
+        </div>
+        <div class="certificate-slide">
+            <img src="./assets/mongodb.jpeg" alt="Certificate 4">
+            <p>Getting started with MongoDB</p>
+        </div>
+        <!-- Add more certificate slides as needed -->
+    </div>
+</section>
+
+<section id="contact"class="w3-container w3-center">
+    <p class="section__text__p1 w3-animate-top">Get in Touch</p>
+    <h1 class="title w3-animate-top">Contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="./assets/email.png" class="icon contact-icon"/>
+            <p ><a href="mailto:sowmiyaeswari23@gmail.com">sowmiyaeswari23@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="./assets/linkedin.png" class="icon contact-icon"/>
+            <p ><a href="https://www.linkedin.com/in/sowmiya-eswari-p-6b5a03281/">LinkedIn</a></p>
+        </div>
+    </div>
+   </section>
+   <script>
+    // JavaScript to track slider position and adjust scrollbar
+    const slider = document.querySelector('.certificate-slider');
+
+    // Function to scroll to the end of the slider
+    function scrollToRight() {
+        slider.scrollLeft = slider.scrollWidth - slider.clientWidth;
+    }
+
+    // Function to automatically scroll to the right when the slider moves
+    slider.addEventListener('scroll', () => {
+        clearTimeout(timer);
+        timer = setTimeout(scrollToRight, 500); // Adjust delay as needed
+    });
+</script>
+
+   
+
+
+
+
+
+
+<!-- Other sections (Projects, Skills, Education, Internships, Certifications, Contact) -->
+
+<footer style="height:26vh;margin:0 1rem;">
+    <nav>
+        <div class="nav-links-container">
+            <ul style="list-style:none;display:flex;gap:1rem;margin-left:300px;">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li> 
+                <li><a href="#skills">Skills</a></li> 
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <p>Copyright &#169; 2024 Sowmiya Eswari. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+    let lastScrollPosition = 0;
+
+    window.addEventListener('scroll', function() {
+        const aboutSection = document.getElementById('about');
+        const scrollPosition = window.scrollY + window.innerHeight;
+
+        if (scrollPosition > aboutSection.offsetTop) {
+            if (window.scrollY > lastScrollPosition) {
+                // Scrolling downwards
+                document.querySelectorAll('.w3-animate-top').forEach(item => {
+                    item.classList.add('w3-animate-bottom');
+                    item.classList.remove('w3-animate-top');
+                });
+            } else {
+                // Scrolling upwards
+                document.querySelectorAll('.w3-animate-bottom').forEach(item => {
+                    item.classList.add('w3-animate-top');
+                    item.classList.remove('w3-animate-bottom');
+                });
+            }
+        }
+        lastScrollPosition = window.scrollY;
+    });
+</script>
+
+</body>
+</html>
